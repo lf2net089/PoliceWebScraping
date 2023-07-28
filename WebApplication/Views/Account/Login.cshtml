@@ -1,0 +1,65 @@
+﻿@using WebApplication.Models
+@model LoginViewModel
+@{
+    ViewBag.Title = "登入";
+}
+
+<main aria-labelledby="title">
+    <h2 id="title">@ViewBag.Title.</h2>
+    <div class="row">
+        <div class="col-md-8">
+            <section id="loginForm">
+                @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <h4>使用本機帳戶進行登入。</h4>
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="row">
+                        @Html.LabelFor(m => m.Email, new { @class = "col-md-2 col-form-label" })
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="row">
+                        @Html.LabelFor(m => m.Password, new { @class = "col-md-2 col-form-label" })
+                        <div class="col-md-10">
+                            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="offset-md-2 col-md-10">
+                            <div class="checkbox">
+                                @Html.CheckBoxFor(m => m.RememberMe)
+                                @Html.LabelFor(m => m.RememberMe)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="offset-md-2 col-md-10">
+                            <input type="submit" value="登入" class="btn btn-outline-dark" />
+                        </div>
+                    </div>
+                    <p>
+                        @Html.ActionLink("以新使用者身分註冊", "Register")
+                    </p>
+                    @* 只要您的密碼重設功能能夠進行帳戶確認，就啟用此項
+                        <p>
+                            @Html.ActionLink("忘記密碼?", "ForgotPassword")
+                        </p>*@
+                }
+            </section>
+        </div>
+        <div class="col-md-4">
+            <section id="socialLoginForm">
+                @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
+            </section>
+        </div>
+    </div>
+</main>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

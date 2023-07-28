@@ -1,0 +1,133 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\CarProject\\PoliceWebScraping\\PoliceWebScraping\\PoliceWebScraping.csproj": {}
+  },
+  "projects": {
+    "D:\\CarProject\\PoliceWebScraping\\PoliceWebScraping\\PoliceWebScraping.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CarProject\\PoliceWebScraping\\PoliceWebScraping\\PoliceWebScraping.csproj",
+        "projectName": "PoliceWebScraping",
+        "projectPath": "D:\\CarProject\\PoliceWebScraping\\PoliceWebScraping\\PoliceWebScraping.csproj",
+        "packagesPath": "C:\\Users\\d6672\\.nuget\\packages\\",
+        "outputPath": "D:\\CarProject\\PoliceWebScraping\\PoliceWebScraping\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\d6672\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "AngleSharp": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "Azure.AI.Vision.ImageAnalysis": {
+              "target": "Package",
+              "version": "[0.13.0-beta.1, )"
+            },
+            "Azure.Core": {
+              "target": "Package",
+              "version": "[1.34.0, )"
+            },
+            "F23.StringSimilarity": {
+              "target": "Package",
+              "version": "[5.1.0, )"
+            },
+            "FFMediaToolkit": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "FlaUI.UIA3": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "Google.Cloud.Vision.V1": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.46, )"
+            },
+            "Imgur.API": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Azure.CognitiveServices.Vision.ComputerVision": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.Web.WebView2": {
+              "target": "Package",
+              "version": "[1.0.1823.32, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "OpenAI": {
+              "target": "Package",
+              "version": "[1.7.2, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[110.2.1-alpha.0.10, )"
+            },
+            "TestStack.White": {
+              "target": "Package",
+              "version": "[0.13.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
